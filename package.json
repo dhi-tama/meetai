@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "dev:webhook": "ngrok http --url=coherent-broadly-minnow.ngrok-free.app 3000"
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
@@ -41,8 +42,9 @@
     "@radix-ui/react-toggle": "^1.1.9",
     "@radix-ui/react-toggle-group": "^1.1.10",
     "@radix-ui/react-tooltip": "^1.2.7",
-    "@stream-io/node-sdk": "^0.6.1",
-    "@stream-io/video-react-sdk": "^1.19.8",
+    "@stream-io/node-sdk": "^0.4.24",
+    "@stream-io/openai-realtime-api": "^0.2.0",
+    "@stream-io/video-react-sdk": "^1.18.0",
     "@tanstack/react-query": "^5.76.1",
     "@tanstack/react-table": "^8.21.3",
     "@trpc/client": "^11.1.2",
@@ -57,6 +59,7 @@
     "dotenv": "^16.5.0",
     "drizzle-orm": "^0.43.1",
     "embla-carousel-react": "^8.6.0",
+    "groq-sdk": "^0.30.0",
     "humanize-duration": "^3.33.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.536.0",
@@ -64,6 +67,7 @@
     "next": "15.3.2",
     "next-themes": "^0.4.6",
     "nuqs": "^2.4.3",
+    "openai": "^5.15.0",
     "react": "^19.0.0",
     "react-day-picker": "^9.8.1",
     "react-dom": "^19.0.0",
